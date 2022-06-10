@@ -9,6 +9,16 @@
       "address": "0x89a163a73dd31Ba6e6B237468C36FED444aC3d01",
       "txHash": "0x0c0f334e56bec98a2f23818040683bc1b423b2e232c6606a2fc5490a2d37e002",
       "kind": "transparent"
+    },
+    {
+      "address": "0xC390765C70a3DA4D120b646967B0A2085bFDfB79",
+      "txHash": "0xcc983423c8d18cda1a3e971450485a036084d039eac0cda931f7e07b81cd20d9",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xD86E89453d0d8d3Ca9C14D168137650d05B356C2",
+      "txHash": "0x0f2ad873b1e14bccf0a8988343615debc79e70d73c6964f1dd14de8020f31a0b",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -100,6 +110,234 @@
             "numberOfBytes": "1"
           },
           "t_contract(IERC20)494": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "3da6799507eff0be938d3355003ea29e8b516ec43b4b38a8a0a23c19f9e9b0e5": {
+      "address": "0x556621EEFf6B45DbF13Ff0D22Bb522d1011E40Ea",
+      "txHash": "0xc58982d356a83887fcfa0235b23e1b0070784ec16f5b66192c26e2b5c5baea7e",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:21"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:26"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:30"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:21"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:77"
+          },
+          {
+            "label": "voted",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "VoteUpgradable",
+            "src": "contracts\\VoteUpgradable.sol:8"
+          },
+          {
+            "label": "voteCounter",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "VoteUpgradable",
+            "src": "contracts\\VoteUpgradable.sol:10"
+          },
+          {
+            "label": "rewardToken",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_contract(IERC20)361",
+            "contract": "VoteUpgradable",
+            "src": "contracts\\VoteUpgradable.sol:12"
+          },
+          {
+            "label": "x",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "VoteUpgradable",
+            "src": "contracts\\VoteUpgradable.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20)361": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "29714ebaaefd7ad0953ee0684b4c55bc001dfb83ffe71bcaeb1816a22dbe7bef": {
+      "address": "0x5a66864011831EF5005E2Ff5A54788FEbefCbAc5",
+      "txHash": "0x851d0aaa659770573c5a8553e96857dde31511128c9bf09480d3a5752d9ec0d8",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:21"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:26"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:30"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:21"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:77"
+          },
+          {
+            "label": "voted",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "VoteUpgradable",
+            "src": "contracts\\VoteUpgradable.sol:8"
+          },
+          {
+            "label": "voteCounter",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "VoteUpgradable",
+            "src": "contracts\\VoteUpgradable.sol:10"
+          },
+          {
+            "label": "rewardToken",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_contract(IERC20)361",
+            "contract": "VoteUpgradable",
+            "src": "contracts\\VoteUpgradable.sol:12"
+          },
+          {
+            "label": "x",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "VoteUpgradable",
+            "src": "contracts\\VoteUpgradable.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20)361": {
             "label": "contract IERC20",
             "numberOfBytes": "20"
           },
